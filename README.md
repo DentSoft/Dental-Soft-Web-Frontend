@@ -1,1 +1,0 @@
-# Dental-Soft-Web-Frontend
