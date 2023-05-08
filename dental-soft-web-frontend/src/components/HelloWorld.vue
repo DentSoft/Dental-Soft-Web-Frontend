@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <img width="300" alt="Vue logo" src="../assets/logo.png"/>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -54,5 +55,12 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 </style>
