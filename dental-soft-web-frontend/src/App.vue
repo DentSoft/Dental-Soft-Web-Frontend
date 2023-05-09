@@ -1,18 +1,25 @@
 <template>
-  <div>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <VerticalNavBarVue />
-  </div>
+    <v-col class="d-flex justify-end pa-0">
+      <div style="width: 82.5%; padding: 0px">
+        <AppBar />
+        <HelloWorld msg="Welcome to Your Vue.js App" />
+      </div>
+    </v-col>
+    <v-col>
+      <VerticalNavBar />
+    </v-col>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import VerticalNavBarVue from './components/VerticalNavBar.vue';
+import VerticalNavBar from './components/VerticalNavBar.vue';
+import AppBar from './components/AppBar.vue';
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    VerticalNavBarVue
+    VerticalNavBar,
+    AppBar
   }
 }
 </script>
@@ -27,7 +34,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: auto;
 }
 
 a:active,
@@ -38,5 +45,9 @@ a:visited {
 
 a:hover {
   background-color: #E0F7FA;
+}
+
+.app-wrapper {
+  margin: auto;
 }
 </style>
